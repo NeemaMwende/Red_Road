@@ -80,4 +80,8 @@ p{
     transform: scale(1.05);
     transition: transform 0.2s ease-in-out;
   }
-  
+  /* Add CSS to make the image fit inside the carousel */
+.carousel-inner img {
+    object-fit: cover;
+    height: 100%;
+  }
