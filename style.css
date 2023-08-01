@@ -49,3 +49,35 @@ p{
       justify-content: left;
       align-items: left;
 }
+.cards
+{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.card {
+    margin: 10px;
+    color: #fff; /* Text color for all cards */
+}
+.card-success {
+    background-color: #28a745; /* Green */
+  }
+
+  .card-danger {
+    background-color: #dc3545; /* Red */
+  }
+
+  .card-primary {
+    background-color: #007bff; /* Blue */
+  }
+
+  .card-warning {
+    background-color: #ffc107; /* Yellow */
+  }
+/* Add styling for the card buttons on hover */
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+  }
+  
