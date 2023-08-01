@@ -1,4 +1,4 @@
-<!-- Add this script tag just before the closing body tag -->
+// <!-- Add this script tag just before the closing body tag -->
  document.addEventListener('DOMContentLoaded', function () {
     const circularCard = document.getElementById('circularCard');
     // Add hover effect to the card
