@@ -42,3 +42,10 @@ p{
     font-weight: 500;
     line-height: 1.5em;
 }
+.btn
+{
+    height: 100%;
+      display: flex;
+      justify-content: left;
+      align-items: left;
+}
