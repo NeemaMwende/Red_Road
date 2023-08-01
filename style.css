@@ -4,10 +4,14 @@
 }
 .dropdown-menu .dropdown-item
 { 
-    width: 250px;
+    width: 200px;
     padding-top: 1em;
     padding-bottom: 1em;
-    color: maroon;
+    color: black;
     font-style: normal;
     font-size: 14px;
+}
+.dropdown-menu .dropdown-item:hover
+{
+    color: rgb(211, 11, 11);
 }
