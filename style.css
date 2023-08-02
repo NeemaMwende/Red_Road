@@ -124,6 +124,8 @@ p{
     height: 500px;
     width: auto;
   }
+
+
   .footer {
     background-color: grey;
     color: black;
@@ -253,4 +255,10 @@ button:hover {
 
 .modal-content form {
     cursor: auto;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    color: #007bff;
 }
