@@ -104,3 +104,37 @@ p{
     height: 500px;
     width: auto;
   }
+  .footer {
+    background-color: grey;
+    color: black;
+    font-size: 16px;
+    line-height: 40px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer ul {
+    list-style-type: none;
+  }
+  
+  .footer .title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: maroon;
+  }
+  .footer a{
+    text-decoration: none;
+    transition: margin-left 0.3s ease;
+  }
+  .footer a:hover
+  {
+    color: maroon;
+    margin-left: 10px;
+
+  }
+  .text-primary
+  {
+    color: black;
+  }
+  
