@@ -26,14 +26,33 @@
 {
     color: rgb(211, 11, 11);
 }
-.containerr
+
+        .containerr {
+            font-family: Arial, sans-serif; /* Replace with desired font-family */
+        }
+
+        .custom-h1 {
+            font-family: 'Barrio', cursive; /* Replace 'Barrio' with the actual font name */
+        }
+
+        .containerr {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .img-thumbnail {
+            width: 100%;
+        }
+    
+/* .containerr
 {
     margin: 20px;
 }
 .h1 
 {
     /* font-family: "Barrio", sans-serif; */
-    font-family: 'Barrio', cursive;
+    /* font-family: 'Barrio', cursive;
     font-size: 60px;
     line-height: 72px;
 }
@@ -42,7 +61,7 @@ p{
     font-size: 20px;
     font-weight: 500;
     line-height: 1.5em;
-}
+} */ 
 .btn
 {
     height: 100%;
@@ -167,10 +186,10 @@ p{
 }
 
 .modal-content {
-    background-color: #e2a4a4;
+    background-color: #eb8080;
     margin: 10% auto;
     padding: 20px;
-    border: 1px solid #be4d4d;
+    border: 1px solid #eb8080;
     width: 30%;
     height: 60%;
     line-height: 20px;
@@ -178,7 +197,7 @@ p{
 
 /* Close button on top right corner of the modal */
 .close {
-    color: #aaa;
+    color: #111111;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -206,7 +225,7 @@ p{
     width: 100%;
     padding: 8px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #eb8080;
     border-radius: 4px;
   }
   
@@ -221,6 +240,6 @@ p{
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: maroon;
   }
   
