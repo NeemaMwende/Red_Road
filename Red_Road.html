@@ -129,8 +129,39 @@
             </div>
         </div>
         <div class="btn">
-            <button type="button" class="btn btn-lg btn-primary bg-maroon rounded-pill">Donate Now</button>
+            <button type="button" class="btn btn-lg btn-primary bg-maroon rounded-pill" onclick="openModal()">Donate Now</button>
         </div>
+
+    <!-- The Donation Modal -->
+    <div id="donationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <form>
+                <h2 class="text-center p-3">Make a Donation</h2>
+                <div class="form-group">
+                    <label for="paymentMethod">Select Payment Method:</label>
+                    <select id="paymentMethod">
+                        <option value="creditCard">Credit Card</option>
+                        <option value="visa">Visa</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="mpesa">Mpesa</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Enter Amount:</label>
+                    <input type="number" id="amount" placeholder="Enter the amount you want to donate">
+                </div>
+                <div class="form-group text-center rounded-pill">
+                    <button type="button" onclick="submitDonation()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+
+    <script src="script.js"></script>
+       
     </section>
 
     <section class="cards ">
@@ -517,7 +548,24 @@ crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
+<script>
+    // Function to open the modal
+function openModal() {
+    document.getElementById("donationModal").style.display = "block";
+  }
+  
+  // Function to close the modal
+  function closeModal() {
+    document.getElementById("donationModal").style.display = "none";
+  }
+  
+  // Function to handle form submission
+  function submitForm(event) {
+    event.preventDefault(); // Prevent form submission
+    // You can perform further actions here, like sending the data to the server
+    closeModal(); // Close the modal after form submission (you can modify this behavior)
+  }
+</script>
 
 </body>
 </html>

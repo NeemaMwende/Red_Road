@@ -19,3 +19,21 @@
     });
   });
 
+  
+// Function to open the modal
+function openModal() {
+  document.getElementById("donationModal").style.display = "block";
+}
+
+// Function to close the modal
+function closeModal() {
+  document.getElementById("donationModal").style.display = "none";
+}
+
+// Function to handle form submission
+function submitForm(event) {
+  event.preventDefault(); // Prevent form submission
+  // You can perform further actions here, like sending the data to the server
+  closeModal(); // Close the modal after form submission (you can modify this behavior)
+}
+
