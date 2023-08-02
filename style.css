@@ -143,3 +143,11 @@ p{
     width: 30%;
     gap: 20px;
   }
+  <!-- /* Your regular card styling goes here */
+
+/* Media query for screen width below 768 pixels */ -->
+@media (max-width: 768px) {
+    .row-cols-md-3 .card {
+        flex: 0 0 100%; /* Make the cards occupy 100% width */
+    }
+}
