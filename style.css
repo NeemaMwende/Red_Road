@@ -373,7 +373,15 @@ h2{
   margin-top: 40px;
 
 }
+.list
+{
+  line-height: 40px;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 10px;
 
+}
 .img
 {
   margin-top: 200px;
@@ -387,3 +395,51 @@ h2{
   margin-top: 40px;
 }
 
+/* sign up form */
+.register .input-area
+        {
+            margin-bottom: 20px;
+        }
+       .register .container 
+        {
+            box-sizing: border-box;
+            width: 700px;
+            background-color: none;
+            padding: 50px;
+            justify-content: center;
+            line-height: 30px; 
+            border: dotted;
+              
+        }
+        h2
+        {
+            color: blue;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: inherit;
+            text-decoration: none;
+        }
+        .register .button
+        {
+            width: 500px; 
+            height: 50px;   
+            margin-right: 00px;
+            margin-left: 50px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        .btn:hover
+        {
+            color: red;
+            background-color: rgb(71, 66, 83);
+        }
+        
+  /* sign up modal */
+  .modal2
+  {
+    display: flex;
+    justify-content: center;
+    
+  }

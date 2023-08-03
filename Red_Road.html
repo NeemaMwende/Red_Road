@@ -92,7 +92,12 @@
                     Contact Us
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkContact">
-                    <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                    <!-- <li><a class="dropdown-item rounded-pill" href="#">Sign Up</a></li> -->
+                    <!-- Button to open the modal -->
+                      <li><a class="dropdown-item rounded-pill" href="#" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Sign Up
+                      </a><li>
+                    <!-- <button type="button" href class="btn btn-lg btn-primary bg-maroon rounded-pill dropddown-item" onclick="openRegister()">Donate Now</button> -->
                   </ul>
                 </li>
               </ul>
@@ -123,9 +128,93 @@
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <p>Try scrolling the rest of the page to see this option in action.</p>
+    <p>Try scrolling the rest of the page to see this option in action.
+      <ul class="list">
+        <li><a href="#">Order on the App</a></li>
+        <li><a href="#">Order on the Web</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Order and Pickup Options</a></li>
+        <li><a href="#">Explore and Find Coffee for Home</a></li>
+      </ul>
+    </p>
   </div>
 </div>
+
+<!-- The Modal
+<div class="modal2 fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        sign up bar in the contact now button
+<section class="register" id="register">
+  <div class="container my-5 p-2">
+    <div class="row justify-content-center">
+        <div class="col-xl-10">
+            <form action="" class="needs-validation" novalidate>
+                <div class="row">
+                      <h2 class=" text-center fw-300 ">Register Here</h2>
+                                     <div class="col-xl-6 input-area">
+                                            <label for="fname">First Name</label>
+                                            <input type="text" name="" id="fname" class="form-control" required>
+                                            <div class="invalid-feedback">Please Enter Your First Name</div>
+                                    </div>
+  
+                                    <div class="col-xl-6 input-area">
+                                                <label for="lname">Last Name</label>
+                                                <input type="text" name="" id="lname" class="form-control" required>
+                                                <div class="invalid-feedback">Please Enter Your Last Name</div>
+                                    </div>
+  
+                                    <div class="col-xl-6 input-area">
+                                            <label for="email">Email Address</label>
+                                            <input type="email" name="" id="email" class="form-control" required>
+                                            <div class="invalid-feedback">Please Enter Your Email</div>
+                                    </div>
+  
+                                    <div class="col-xl-6 input-area">
+                                            <label for="city">City Of Residence</label>
+                                            <input type="text" name="" id="city" class="form-control" required>
+                                            <div class="invalid-feedback">Please Enter Your Address</div>
+                                    </div>
+                                        
+                                    <div class="col-xl-6 input-area">
+                                            <label for="fname">Phone Number</label>
+                                            <input type="text" name="" id="fname" class="form-control" required>
+                                            <div class="invalid-feedback">Please Enter Your First Name</div>
+                                    </div>
+  
+                                    <div class="col-xl-6 input-area">
+                                        <label for="fname">Phone Number</label>
+                                        <input type="text" name="" id="fname" class="form-control" required>
+                                        <div class="invalid-feedback">Please Enter Your First Name</div>
+                                    </div> -->
+                                            
+                                    
+                <!-- </div>
+            </form>
+        </div>
+    </div>
+  </div>
+  </section>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        You can add additional buttons here if needed -->
+        <!-- <div class="button">   -->
+          <!-- <input type="submit" value="submit" class="btn btn-primary ">
+          <input type="submit" value="Cancel" class="btn btn-primary "> -->
+          <!-- <button type="submit" class="btn btn-lg btn-primary bg-maroon rounded-pill" onclick="openModal()">Register Now</button>
+          <button type="submit" class="btn btn-lg btn-primary bg-maroon rounded-pill" onclick="openModal()">Cancel Register</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div> --> 
+
         
     <section>
         <div class="containerr">
@@ -179,6 +268,11 @@
 </div>
  
     <script src="script.js"></script>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
 
     <section class="cards">
         <div class="card-group">
@@ -638,7 +732,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
+  
   
 
   
@@ -787,6 +881,28 @@ function openModal() {
         event.preventDefault(); // Prevent the default behavior of the link (page navigation)
         window.location.href = this.getAttribute('href'); // Load the new page specified in the "href" attribute
     });
+</script>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+'use strict'
+
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+const forms = document.querySelectorAll('.needs-validation')
+
+// Loop over them and prevent submission
+Array.from(forms).forEach(form => {
+form.addEventListener('submit', event => {
+  if (!form.checkValidity()) {
+    event.preventDefault()
+    event.stopPropagation()
+  }
+
+  form.classList.add('was-validated')
+}, false)
+})
+})()
 </script>
 
 </body>
