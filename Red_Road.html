@@ -220,20 +220,111 @@
       </section>
 
 
-      <section>
-        <!-- Bootstrap container for the video -->
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <!-- The video element -->
-        <video id="autoplayVideo" class="w-100" controls autoplay muted>
-          <source src="https://www.un.org/en/global-issues/children" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-  </div>
-</section>
+      <!-- <section>
+        Bootstrap container for the video -->
+        <!-- <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8"> -->
+              <!-- The video element -->
+              <!-- <video id="autoplayVideo" class="w-100" autoplay muted playsinline>
+                <source src="https://www.un.org/en/global-issues/children" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Accordion section -->
+    
+        <section class="accordion">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <!-- The image element -->
+                <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+              </div>
+              <div class="col-md-6">
+                <!-- Bootstrap accordion for reviews -->
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <h2 class="text-center my-5 py-5 text-primary">Reviews</h2>
+                  <div class="accordion-item">
+                    <!-- Accordion header -->
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                        aria-controls="flush-collapseOne">
+                        Racheal Riggid: Founder
+                      </button>
+                    </h2>
+                    <!-- Accordion body -->
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        Placeholder content for this accordion, which is intended to demonstrate the
+                        <code>.accordion-flush</code> class. This is the first item's accordion body. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Necessitatibus pariatur ducimus delectus blanditiis maxime cupiditate aperiam tempora facere praesentium.
+                        Voluptate repellendus odit quis porro laboriosam adipisci iusto voluptates suscipit beatae. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. In, placeat consectetur fugit debitis vitae voluptatem nemo saepe facilis adipisci eum
+                        natus architecto non, nostrum voluptatum quas autem veritatis temporibus necessitatibus.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add other accordion items here -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Candice King
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga architecto, excepturi exercitationem sed aspernatur asperiores
+                         reiciendis molestias deserunt possimus, aut commodi numquam dolorum rerum iure odit aliquid error pariatur! 
+                         Veritatis?Placeholder content for this accordion, which is intended to demonstrate the <code>
+                          .accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with 
+                          some actual Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fuga, ratione suscipit
+                           rem animi assumenda nemo sint laudantium minima praesentium
+                           doloribus officiis corporis similique facere inventore atque aspernatur enim aliquid?</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Candice King
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga architecto, excepturi exercitationem sed aspernatur asperiores
+                         reiciendis molestias deserunt possimus, aut commodi numquam dolorum rerum iure odit aliquid error pariatur! 
+                         Veritatis?Placeholder content for this accordion, which is intended to demonstrate the <code>
+                          .accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with 
+                          some actual Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fuga, ratione suscipit
+                           rem animi assumenda nemo sint laudantium minima praesentium
+                           doloribus officiis corporis similique facere inventore atque aspernatur enim aliquid?</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Candice King
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga architecto, excepturi exercitationem sed aspernatur asperiores
+                         reiciendis molestias deserunt possimus, aut commodi numquam dolorum rerum iure odit aliquid error pariatur! 
+                         Veritatis?Placeholder content for this accordion, which is intended to demonstrate the <code>
+                          .accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with 
+                          some actual Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fuga, ratione suscipit
+                           rem animi assumenda nemo sint laudantium minima praesentium
+                           doloribus officiis corporis similique facere inventore atque aspernatur enim aliquid?</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+       
+      
 
 <!-- <section class="About">
     <h2>About Us</h2>
@@ -498,58 +589,7 @@
 
   
 
-  <!-- Accordion section -->
-  <div class="accordion accordion-flush" id="accordionFlushExample">
-    <h2 text-center m-5 p-5 text-primary>Reviews</h2>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingOne">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          Racheal Riggid: Founder
-        </button>
-      </h2>
-      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-           <code>.accordion-flush</code> class. This is the first item's accordion body.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus pariatur ducimus delectus blanditiis maxime cupiditate aperiam tempora
-           facere praesentium. Voluptate repellendus odit quis porro laboriosam adipisci iusto voluptates suscipit beatae.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, placeat consectetur fugit debitis vitae voluptatem nemo 
-          saepe facilis adipisci eum natus architecto non, nostrum voluptatum quas autem veritatis temporibus necessitatibus.</div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-          Candice King
-        </button>
-      </h2>
-      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga architecto, excepturi exercitationem sed aspernatur asperiores
-           reiciendis molestias deserunt possimus, aut commodi numquam dolorum rerum iure odit aliquid error pariatur! 
-           Veritatis?Placeholder content for this accordion, which is intended to demonstrate the <code>
-            .accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with 
-            some actual Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fuga, ratione suscipit
-             rem animi assumenda nemo sint laudantium minima praesentium
-             doloribus officiis corporis similique facere inventore atque aspernatur enim aliquid?</div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          Joathan Bufey
-        </button>
-      </h2>
-      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente soluta odit libero consequuntur fugit distinctio quis ratione quo, asperiores perferendis 
-          incidunt, ab suscipit eum sit, voluptatem delectus quia reiciendis praesentium?Placeholder content for this
-           accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's 
-           accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to 
-           make it look, at least at first glance, a bit more representative of how this would look in a real-world 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis est veniam adipisci vel possimus minima aliquid praesentium eaque quam necessitatibus, 
-           sunt voluptatem accusamus sed sint excepturi recusandae repudiandae, hic nostrum?application.</div>
-      </div>
-    </div>
-  </div>
- 
+  
   
 
   <footer class="footer">
