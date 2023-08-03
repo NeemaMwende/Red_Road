@@ -333,7 +333,14 @@ h2{
   background-color: #f3f3f3;
 } */
 
-
+.accordion
+{
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px; /* Set the maximum width of the accordion container */
+    margin: 0 auto; /* Center the accordion horizontally */
+}
 
 
 
