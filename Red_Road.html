@@ -110,14 +110,47 @@
             </a>
           </li>
 
-          <nav class="navbar navbar-light bg-light">
+          <!-- <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
               </form>
             </div>
+          </nav> -->
+
+          <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <form class="d-flex" id="search-form">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
           </nav>
+          
+          <script>
+            document.getElementById("search-form").addEventListener("submit", function (e) {
+              e.preventDefault(); // Prevent the form from submitting
+          
+              // Get the user's search query
+              const searchQuery = document.getElementById("search-input").value;
+          
+              // Make an API request (replace with your API endpoint)
+              fetch(`https://api.example.com/search?q=${searchQuery}`)
+                .then((response) => response.json())
+                .then((data) => {
+                  // Process and display the API response here
+                  console.log(data);
+                })
+                .catch((error) => {
+                  console.error("Error fetching data:", error);
+                });
+            });
+          </script>
+          
+
+
+
         </nav>
     </section>
 
