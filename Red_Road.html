@@ -276,29 +276,54 @@
 
     <!-- The Donation Modal -->
 <div id="donationModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <form>
-            <h2 class="text-center p-3">Make a Donation</h2>
-            <div class="form-group">
-                <label for="paymentMethod">Select Payment Method:</label>
-                <select id="paymentMethod">
-                    <option value="creditCard">Credit Card</option>
-                    <option value="visa">Visa</option>
-                    <option value="paypal">PayPal</option>
-                    <option value="mpesa">Mpesa</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="amount">Enter Amount:</label>
-                <input type="number" id="amount" placeholder="Enter the amount you want to donate">
-            </div>
-            <div class="form-group text-center rounded-pill">
-                <button type="button" onclick="submitDonation()">Submit</button>
-            </div>
-        </form>
-    </div>
+  <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="donationForm">
+          <form id="paymentForm" style="display: block;">
+              <h2 class="text-center p-3">Make a Donation</h2>
+              <div class="form-group">
+                  <label for="paymentMethod">Select Payment Method:</label>
+                  <select id="paymentMethod">
+                      <option value="creditCard">Credit Card</option>
+                      <option value="visa">Visa</option>
+                      <option value="paypal">PayPal</option>
+                      <option value="mpesa">Mpesa</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="amount">Enter Amount:</label>
+                  <input type="number" id="amount" placeholder="Enter the amount you want to donate">
+              </div>
+              <div class="form-group text-center rounded-pill">
+                  <button type="button" onclick="processPayment()">Submit</button>
+              </div>
+          </form>
+          <div id="thankYouMessage" style="display: none;">
+              <h2 class="text-center p-3">Thank You for Your Donation!</h2>
+              <p>Your donation has been processed successfully.</p>
+          </div>
+      </div>
+  </div>
 </div>
+
+<script>
+  function closeModal() {
+      document.getElementById("donationModal").style.display = "none";
+  }
+
+  function processPayment() {
+      const paymentMethod = document.getElementById("paymentMethod").value;
+      const amount = document.getElementById("amount").value;
+
+      // Make an API request to process the payment using the selected payment method and amount.
+      // You should replace this with your actual payment API integration.
+
+      // Assuming the payment is successful, show the thank you message.
+      document.getElementById("paymentForm").style.display = "none";
+      document.getElementById("thankYouMessage").style.display = "block";
+  }
+</script>
+
  
     <script src="script.js"></script>
 
